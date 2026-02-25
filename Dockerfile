@@ -4,7 +4,11 @@
 ARG BASE_TAG=2.7.5
 FROM docker.n8n.io/n8nio/n8n:${BASE_TAG}
 
-# Install ffmpeg (Alpine base)
+# Install ffmpeg (Debian/Ubuntu base)
 USER root
-RUN apk update && apk add --no-cache ffmpeg
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends ffmpeg \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/*
+
 USER node
