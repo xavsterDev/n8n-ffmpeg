@@ -1,6 +1,6 @@
 # Dockerfile
 
-ARG BASE_TAG=2.7.5
+ARG BASE_TAG=2.8.3
 
 # Stage 1: get static ffmpeg binaries
 FROM mwader/static-ffmpeg:6.0 AS ffmpeg
