@@ -1,5 +1,5 @@
 # Dockerfile
-ARG BASE_TAG=2.29.8
+ARG BASE_TAG=2.32.7
 # Stage 1: get static ffmpeg binaries
 FROM mwader/static-ffmpeg:6.0 AS ffmpeg
 # Stage 2: your n8n base image (minimal/distroless-friendly)
