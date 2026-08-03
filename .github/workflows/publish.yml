@@ -10,7 +10,7 @@ permissions:
 
 env:
   IMAGE_NAME: n8n-ffmpeg
-  N8N_TAG: 2.29.8
+  N8N_TAG: 2.32.7
 
 jobs:
   build-and-push:
